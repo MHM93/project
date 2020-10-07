@@ -349,6 +349,13 @@ div .more-btn:active {
     width: 33px;
 }
 
+.footer li::after{
+    content: "|";
+    color: #fff;
+}
+.footer li:last-child:after{
+    content: "";
+}
 /* ---------------------responsive---------------- */
 
 @media screen and (max-width: 676px) {
