@@ -1,0 +1,427 @@
+/* basic setup */
+/* ___________________ */
+
+@font-face {
+    font-family: 'myFirstFont';
+    src: url('fonts/iranyekanwebregular.woff');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'myFirstFont';
+}
+
+html,
+body {
+    background-color: #fff;
+    color: #555;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+    
+}
+
+
+/* -------------------icon------------- */
+.icon {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+
+
+/* ----------top header------------- */
+
+
+
+.top-btn{
+    border-bottom-left-radius: 70px;
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.12);
+    border-bottom-right-radius: 70px;
+    background-color: #fff;
+    max-width: 25%;
+}
+
+.top-btn:link ,
+.top-btn:visited {
+    text-decoration: none;
+    color: #fff;
+    border: none;
+}
+
+.top-btn:hover ,
+.top-btn:active{
+    text-decoration: none;
+    background-color:rgb(218, 216, 218);
+    border: none;
+}
+
+.top-list li {
+    color: black;
+    margin-right: 13px;
+    font-size: 14px;
+}
+
+.top-nav a:link ,
+.top-nav a:visited{
+    text-decoration: none;
+    padding-bottom: 3px;
+    transition: border-bottom 0.2s, color 0.2s ;
+
+}
+
+.top-nav a:hover ,
+.top-nav a:active{
+    color: #555;
+    border-bottom: 3px solid blue;
+}
+ 
+.logo{
+     width: 15%;
+}
+
+.top-list li:link,
+.top-list li:visited {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 1px;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+.top-list li:active a,
+.top-list li:hover a {
+    color: #fff;
+    border-bottom: 1px solid transparent;
+    border-bottom: 3px solid blue;
+}
+
+.menu {
+    width: 20px;
+}
+
+.close {
+    width: 20px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+}
+
+body .sidebar {
+    height: 100vh;
+    background-color: #68B78C;
+    width: 280px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    transform: translatex(320px);
+    transition: ease-in-out 0.8s;
+}
+
+#mobile-menu:checked+.sidebar {
+    transform: translatex(0) !important;
+}
+
+#close-btn{
+    z-index: 999999999;
+}
+/* -----------BTN----------------- */
+.join-btn {
+    background-color: #68B78C;
+    font-size: 10px;
+}
+
+div .join-btn:link,
+div .join-btn:visited {
+    border: 1px solid #fff;
+    text-decoration: none;
+}
+
+div .join-btn:hover,
+div .join-btn:active {
+    background-color: #68B78C;
+}
+
+.join-link {
+    color: #444;
+    font-size: 14px;
+}
+
+div .join-link:link,
+div .join-link:visited {
+    text-decoration: none;
+}
+
+div .join-link:hover,
+div .join-link:active {
+    color: #444;
+}
+
+.join-btn-1 {
+    background-color: #CC8585;
+    font-size: 10px;
+}
+
+div .join-btn-1:link,
+div .join-btn-1:visited {
+    border: 1px solid #fff;
+    text-decoration: none;
+}
+
+div .join-btn-1:hover,
+div .join-btn-1:active {
+    background-color: #CC8585;
+}
+
+div .more-btn:link,
+div .more-btn:visited {
+    border: 1px solid #fff;
+    text-decoration: none;
+}
+
+div .more-btn:hover,
+div .more-btn:active {
+    background-color:#fff;
+    color:blue;
+}
+.footer-btn {
+    color: #fff;
+}
+
+
+.footer-btn:link,
+.footer-btn:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-btn:hover,
+.footer-btn:active {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* -----------our courses----------- */
+.course-nav a:link ,
+.course-nav a:visited{
+    text-decoration: none;
+    padding-bottom: 3px;
+    transition: border-bottom 0.2s, color 0.2s ;
+
+}
+.course-nav a:hover ,
+.course-nav a:active{
+    color: #555;
+    border-bottom: 3px solid blue;
+}
+.course-nav{
+    font-size: 14px;
+}
+
+.our-courses {
+    height: 50%;
+}
+
+.text-course {
+    font-size: 14px;
+}
+
+.down-img{
+    position: absolute;
+    bottom: 4%;
+    right: 4%;
+    font-size: 3px;
+}
+.icon-on-img {
+  width: 20px;
+}
+
+.text-on-img {
+    font-size: 10px;
+    color: #fff;
+}
+
+
+/* -------------teacher---------------- */
+
+    
+        .teacher{
+            direction: ltr;
+        }
+        .teacher-slider{
+            margin:0 auto;
+        
+            width: 25%;
+       
+        
+        }
+        
+
+/******************** helper class *******************/
+.border-radius-none {
+    border-radius: 0 !important;
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+.btn:focus{
+    outline: 0;
+    box-shadow: none;
+  
+}
+.img-card {
+    opacity: 0.4;
+}
+
+
+/* -----------------------our blog---------------- */
+
+
+.news-border {
+    position: absolute;
+    font-size: 20px;
+    text-align: center;
+    z-index: 1000;
+    top: 10px;
+    right: 10px;
+}
+
+.icon-overley {
+    width: 20px;
+}
+
+.card-text {
+    font-size: 16px;
+}
+
+.new-event {
+    background-color: #ceb28d;
+
+}
+.img-text{
+    position: absolute;
+     bottom: 3px;
+ }
+
+.check {
+    color: #fff;
+    font-size: 25px;
+
+
+}
+
+.check:link,
+.check:visited {
+    text-decoration: none;
+    color: #fff;
+}
+
+.check:hover,
+.check:active {
+    color: #fff;
+    text-decoration: none;
+
+}
+
+
+/* ---------footer----------- */
+.footer {
+    background-color: #444;
+}
+
+.logo-footer {
+    width: 200px;
+    text-align: center;
+}
+
+.icon-footer {
+    width: 33px;
+}
+
+/* ---------------------responsive---------------- */
+
+@media screen and (max-width: 676px) {
+.top-btn{
+    max-width: 80%;
+}
+   
+}
+
+@media (min-width: 576px) and (max-width: 960px) {
+    .card-columns {
+        column-count: 2;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    
+    .footer-btn {
+        display: none;
+    }
+
+    .footer-text {
+        text-align: center;
+    }
+     .top-nav{
+       display: none;
+      }
+      .teacher-slider{
+          font-size: 15px;
+      }
+
+}
+
+@media screen and (max-width: 768px) {
+   h3{
+       font-size: 24px;
+   }
+   
+    
+    .footer-btn {
+        display: none;
+    }
+
+    .footer-text {
+        text-align: center;
+    }
+
+     .top-nav{
+       display: none;
+       font-size: 13px;
+   }
+   .course-nav{
+       font-size: 12px;
+   }
+   .menu{
+       text-align: right;
+   }
+   .lng-menu{
+       margin-top: 0;
+   }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .top-nav{
+        display: none;
+    }
+    .footer-btn {
+        display: inline-block;
+        font-size: 15px;
+    }
+    .footer-text{
+        font-size: 15px;
+    }
+   
+}
+
+@media (min-width: 1200px) and (max-width: 2560px) {
+    .menu{
+        display: none;
+    }
+}
