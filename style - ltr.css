@@ -308,10 +308,13 @@ div .more-btn:active {
     background-color: #ceb28d;
 
 }
-
+.text-blog{
+    text-align: left;
+}
 .img-text{
     position: absolute;
      bottom: 3px;
+     text-align: left;
  }
 
 .check {
